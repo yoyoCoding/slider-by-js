@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Resume</title>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_663033_l5eieml20v841jor.css">
+	<link rel="stylesheet" type="text/css" href="./css/slider.css">
+</head>
+<body>
+
+	<div class="wrapper" id="container">
+		<div class="container" id="slide1">
+			<ul>
+				<li><a href=""><img src="./img/book.jpg" alt="文字1"></a></li>
+				<li><a href=""><img src="img/book.png" alt="文字2"></a></li>
+				<li><a href=""><img src="img/book2.png" alt="文字3"></a></li>
+				<li><a href=""><img src="img/mimi.png" alt="文字4"></a></li>
+			</ul>
+			<!-- <div id="msg">当前页</div>
+			<ol>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+			<span id="ltBtn">&lt</span>
+			<span id="rtBtn">&gt</span> -->
+		</div>
+	</div>
+	
+
+	<script src="./js/slider.js"></script>
+	<!-- <script src="./js/slider_exam.js"></script> -->
+	<script type="text/javascript">
+		window.onload = function(){
+			var body_height = document.body.scrollHeight;
+			document.getElementById('container').style.height = body_height + 'px';
+		}
+
+		var s = new Slider("slide1");
+		// console.info(s);
+
+	</script>
+</body>
+</html>
